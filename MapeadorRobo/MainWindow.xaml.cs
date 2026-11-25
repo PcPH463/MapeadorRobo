@@ -1,6 +1,7 @@
 ﻿
 
 
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -19,9 +20,22 @@ namespace MapeadorRobo
     /// </summary>
     public partial class MainWindow : Window
     {
+        public ObservableCollection<Tile> Tiles { get; set; } 
+            = new ObservableCollection<Tile>();
+
         public MainWindow()
         {
             InitializeComponent();
+
+            this.DataContext = this;
+
+            for (int i = 0; i < 50; i++)
+            {
+                for (int j = 0; j < 50; j++)
+                {
+                    Tiles.Add(new Tile(i, j));
+                }
+            }
         }
     }
 }

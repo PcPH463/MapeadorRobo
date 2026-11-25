@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MapeadorRobo"
+        xmlns:controls="clr-namespace:Auxide.Controls"
         mc:Ignorable="d"
         Title="MainWindow" Height="550" Width="900"
         WindowStartupLocation="CenterScreen">
@@ -41,9 +42,12 @@
             <StatusBarItem HorizontalAlignment="Right">
                 <StackPanel Orientation="Horizontal" Margin="5,0">
                     <TextBlock Text="Zoom:" Background="Transparent" VerticalAlignment="Center"/>
-                    <Slider x:Name="ZoomSlider" Width="100" Value="100" Minimum="50" Maximum="200" Margin="5,0" IsSnapToTickEnabled="True" TickFrequency="10" TickPlacement="BottomRight"/>
-                    <TextBox 
-                        Text="{Binding ElementName=ZoomSlider, Path=Value, 
+                    <Slider x:Name="ZoomSlider" Width="100"
+                            Value="100" Minimum="50"
+                            Maximum="200" Margin="5,0"
+                            IsSnapToTickEnabled="True" TickFrequency="10"
+                            TickPlacement="BottomRight"/>
+                    <TextBox Text="{Binding ElementName=ZoomSlider, Path=Value, 
                         Mode=TwoWay, UpdateSourceTrigger=LostFocus}" 
                         Width="35" VerticalAlignment="Center"/>
                 </StackPanel>
@@ -52,8 +56,36 @@
         <!-- Barra inferiror para detalhes e a opção de Zoom -->
         
         <!-- Barra de ferramentas lateral -->
-        <Expander Grid.Row="1" Grid.Column="0" Background="Beige" BorderBrush="SaddleBrown" ExpandDirection="Right">
+        <Expander Grid.Row="1" Grid.Column="0"
+                  Background="Beige" BorderBrush="SaddleBrown"
+                  ExpandDirection="Right">
             <Border Width="100" BorderThickness="2"/>
         </Expander>
+        <!-- Barra de ferramentas lateral -->
+        
+        <!-- Grade para o mapa -->
+        <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                      VerticalScrollBarVisibility="Auto"
+                      Grid.Column="1"
+                      Grid.Row="1"
+                      Margin="5">
+            <ItemsControl ItemsSource="{Binding Tiles}"
+                          Height="2000"
+                          Width="2000">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="25" Rows="25"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="Gray"
+                                BorderThickness="0.25"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+        <!-- Grade para o mapa -->
     </Grid>
 </Window>
