@@ -23,6 +23,9 @@ namespace MapeadorRobo
         public ObservableCollection<Tile> Tiles { get; set; } 
             = new ObservableCollection<Tile>();
 
+        public List<Tile> ConectadasTerreno { get; set; }
+            = new List<Tile>();
+
         private bool Ativo;
         private Tile TileSelecionada;
 
@@ -69,6 +72,26 @@ namespace MapeadorRobo
             tile.Selecionado = Visibility.Collapsed;
 
             Ativo = true;
+        }
+
+        private void Cell_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            var grid = sender as Grid;
+            var tile = grid.DataContext as Tile;
+            
+            if (!ConectadasTerreno.Contains(tile))
+            {
+                ConectadasTerreno.Add(tile);
+
+                AtualizarDesenhoTerreno(grid);
+            }
+        }
+
+        private void AtualizarDesenhoTerreno(Grid grid)
+        {
+            Point point = grid.TranslatePoint(new Point(0,0), CanvaDesenhos);
+
+            PolilinhaConexaoTerreno.Points.Add(point);
         }
     }
 }

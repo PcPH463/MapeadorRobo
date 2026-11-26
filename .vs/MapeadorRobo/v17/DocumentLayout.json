@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno\\Desktop\\Projeto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{467CD118-BED8-4CCA-9B56-6E065287CD1D}|MapeadorRobo\\MapeadorRobo.csproj|c:\\users\\aluno\\desktop\\projeto\\mapeadorrobo\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{467CD118-BED8-4CCA-9B56-6E065287CD1D}|MapeadorRobo\\MapeadorRobo.csproj|solutionrelative:mapeadorrobo\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{467CD118-BED8-4CCA-9B56-6E065287CD1D}|MapeadorRobo\\MapeadorRobo.csproj|c:\\users\\aluno\\desktop\\projeto\\mapeadorrobo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{467CD118-BED8-4CCA-9B56-6E065287CD1D}|MapeadorRobo\\MapeadorRobo.csproj|solutionrelative:mapeadorrobo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{467CD118-BED8-4CCA-9B56-6E065287CD1D}|MapeadorRobo\\MapeadorRobo.csproj|c:\\users\\aluno\\desktop\\projeto\\mapeadorrobo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{467CD118-BED8-4CCA-9B56-6E065287CD1D}|MapeadorRobo\\MapeadorRobo.csproj|solutionrelative:mapeadorrobo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{467CD118-BED8-4CCA-9B56-6E065287CD1D}|MapeadorRobo\\MapeadorRobo.csproj|c:\\users\\aluno\\desktop\\projeto\\mapeadorrobo\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{467CD118-BED8-4CCA-9B56-6E065287CD1D}|MapeadorRobo\\MapeadorRobo.csproj|solutionrelative:mapeadorrobo\\classes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{467CD118-BED8-4CCA-9B56-6E065287CD1D}|MapeadorRobo\\MapeadorRobo.csproj|c:\\users\\aluno\\desktop\\projeto\\mapeadorrobo\\assets\\code\\uniformgridpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -43,20 +43,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Classes.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\Projeto\\MapeadorRobo\\Classes.cs",
               "RelativeDocumentMoniker": "MapeadorRobo\\Classes.cs",
               "ToolTip": "C:\\Users\\Aluno\\Desktop\\Projeto\\MapeadorRobo\\Classes.cs",
               "RelativeToolTip": "MapeadorRobo\\Classes.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA4wBAAAAA+AAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAcwBAAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-24T23:50:30.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-24T23:50:30.096Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\Projeto\\MapeadorRobo\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MapeadorRobo\\MainWindow.xaml",
@@ -68,13 +67,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\Projeto\\MapeadorRobo\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MapeadorRobo\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Aluno\\Desktop\\Projeto\\MapeadorRobo\\MainWindow.xaml.cs",
               "RelativeToolTip": "MapeadorRobo\\MainWindow.xaml.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAA7wDAAAABGAAAA",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAkwF0AAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-24T21:44:07.304Z",
               "EditorCaption": ""
