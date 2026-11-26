@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MapeadorRobo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d18ba4bf48254ea93bd7baf893ec233862a38b25")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28aacf388f47caff1e8439f56ce9256aba3e4a90")]
 [assembly: System.Reflection.AssemblyProductAttribute("MapeadorRobo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MapeadorRobo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

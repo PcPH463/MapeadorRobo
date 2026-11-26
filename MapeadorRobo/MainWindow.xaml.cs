@@ -91,7 +91,15 @@ namespace MapeadorRobo
         {
             Point point = grid.TranslatePoint(new Point(0,0), CanvaDesenhos);
 
+            // Para manter o primeiro ponto tambem como sempre o ultimo
+            // ele é adicionado no final e removido no começo
+            if (PolilinhaConexaoTerreno.Points.Count > 1)
+            {
+                PolilinhaConexaoTerreno.Points.RemoveAt(PolilinhaConexaoTerreno.Points.Count - 1);
+            }
+
             PolilinhaConexaoTerreno.Points.Add(point);
+            PolilinhaConexaoTerreno.Points.Add(PolilinhaConexaoTerreno.Points[0]);
         }
     }
 }
