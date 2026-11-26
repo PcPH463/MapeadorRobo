@@ -23,6 +23,9 @@ namespace MapeadorRobo
         public ObservableCollection<Tile> Tiles { get; set; } 
             = new ObservableCollection<Tile>();
 
+        private bool Ativo;
+        private Tile TileSelecionada;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -36,6 +39,36 @@ namespace MapeadorRobo
                     Tiles.Add(new Tile(i, j));
                 }
             }
+        }
+
+        private void Cell_MouseEnter(object sender, MouseEventArgs e)
+        {
+            // Detecta quando o mouse entra em uma célula
+            // e torna visivel o indicador
+
+            // Evita disparar o evento muitas vezes desnecessáriamente
+            if (Ativo)
+            {
+                var grid = sender as Grid;
+                var tile = grid.DataContext as Tile;
+
+                tile.Selecionado = Visibility.Visible;
+
+                Ativo = false;
+            }
+        }
+
+        private void Cell_MouseLeave(object sender, MouseEventArgs e)
+        {
+            // Detecta quando o mouse sai da célula
+            // para desabilitar o indicador
+
+            var grid = sender as Grid;
+            var tile = grid.DataContext as Tile;
+
+            tile.Selecionado = Visibility.Collapsed;
+
+            Ativo = true;
         }
     }
 }
